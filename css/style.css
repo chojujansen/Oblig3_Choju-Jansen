@@ -10,7 +10,10 @@
 }
 
 body {
-
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -233,4 +236,131 @@ nav .content .links {
 
 .slider-nav a:hover{
     opacity: 1;
+}
+
+
+
+
+footer {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 50px 100px;
+    background: black;
+}
+
+footer .footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .footer-container .sec h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .sec h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 50px;
+    background: #fff;
+}
+
+footer .footer-container .sec p {
+    color: #fff;
+}
+
+.sci {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 10px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: gray;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: black;
+}
+
+.sci li a i {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+
+.quicklinks li a {
+    color: orange;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: white;
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+    color: purple;
+    font-size: 20px;
+}
+
+.info li span {
+    color: white;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: orange;
+}
+
+@media (max-width: 900px) {
+    footer {
+        padding: 40px;
+    }
+    footer .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
