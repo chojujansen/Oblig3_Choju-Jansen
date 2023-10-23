@@ -11,8 +11,8 @@
 
 body {
     display: grid;
-    justify-content: end;
-    align-content: end;
+    justify-content: center;
+    align-content: center;
     min-height: 100vh;
 }
 
@@ -99,15 +99,12 @@ body {
 }
 
 
-main {
-    min-height: 100vh;
-}
 
 .wrapper {
     background: #171c24 ;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 99;
 }
 
 .wrapper nav {
@@ -226,7 +223,7 @@ nav .content .links {
 
 
 
-/* Responsive */
+/* Responsive--------- */
 @media screen and (max-width: 1300px) {
     .wrapper nav {
         max-width: 100%;
@@ -341,7 +338,6 @@ nav .content .links {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
 
 .slider img {
@@ -376,6 +372,50 @@ nav .content .links {
 
 
 
+.nyheter-forside {
+    color: pink;
+}
+
+.produkter-forside {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    padding-top: 50px;
+    overflow: auto;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+
+.card img {
+    width: 100%;
+  }
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.card:hover .img-top {
+    display: inline;
+    opacity: 1;
+}
+
+  .merke-forside {
+    text-decoration: none;
+    opacity: 0.5;
+    color: black;
+  }
+  
+
+
+
+/* Footer--------- */
 
 footer {
     position: relative;
@@ -383,7 +423,7 @@ footer {
     height: auto;
     padding: 50px 100px;
     background: #f2f2f2;
-    z-index: 1;
+    z-index: 60;
 }
 
 footer .footer-container {
