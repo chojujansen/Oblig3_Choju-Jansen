@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.produkt-galleri {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+.produkt-galleri a img {
+    height: 200px;
+}
+
+/*-------------------------------*/
+
+.hovedbilde {
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+}
+
+.hovedbilde img { 
+    height: 200px;
+}
