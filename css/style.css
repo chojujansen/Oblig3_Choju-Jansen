@@ -168,7 +168,7 @@ body {
     background: #ffffff ;
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 95;
 }
 
 .wrapper nav {
@@ -519,18 +519,12 @@ nav .content .links {
   }
 
 
-.tittel-handlekurv {
-    position: absolute;
-    top: 85px;
-    left: 40px;
-}
-
 
 .cart-container {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin-top: 110px;
+    margin-top: 30px;
     margin-inline: 30px;
 }
 
@@ -789,4 +783,83 @@ footer .footer-container .sec p {
 .choose-size-btn:checked + .test12 {
     opacity: 1;
     color: black;
+}
+
+.frakt-og-sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-inline: 60px;
+    margin-top: 20px;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.frakt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sum {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-til-betaling {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-inline: 50px;
+}
+
+
+.main-handlekurv {
+    display: flex;
+    justify-content: right;
+}
+
+.hele-handlekurv {
+    position: fixed;
+    max-width: 500px;
+    border: black solid 1px;
+    background-color: white;
+    padding-bottom: 10px;
+    z-index: 100;
+}
+
+.tittel-handlekurv {
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.show i,
+.hide i {
+    color: black;
+}
+
+.hide {
+    position: fixed;
+    top: 30px;
+    right: 276px;
+}
+
+.details,
+.show,
+.hide:target {
+  display: none;
+}
+
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block;
 }
