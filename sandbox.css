@@ -1,28 +1,99 @@
-body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
 
 
-.produkt-galleri {
+
+.alt-innhold {
     display: flex;
-    justify-content: space-evenly;
-    border: 2px solid black;
     flex-direction: column;
-}
-
-.produkt-galleri a img {
-    height: 200px;
-}
-
-/*-------------------------------*/
-
-.hovedbilde {
-    display: flex;
-    border: 2px solid black;
+    gap: 10px;
     align-items: center;
 }
 
-.hovedbilde img { 
-    height: 200px;
+.all-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.small-images {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+}
+
+.small-images img {
+    width: 30%;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.small-images img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.name-price {
+    display: grid;
+    width: 100%;
+}
+
+.prod-desc {
+    padding: 10px;
+    max-width: 500px;
+}
+
+.btn-leggtil{
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin: 15px;
+    height: 30px;
+}
+
+.select-box {
+    border: black solid 2px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin: 15px;
+    height: 30px;
+}
+
+.btn-leggtil:active {
+    transform: scale(0.98);
+  }
+
+.select-box option{
+    overflow-y: scroll;;
+  }
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review {
+    border: black solid 2px;
+    border-radius: 5px;
+    padding: 10px;
 }
