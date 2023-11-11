@@ -8,26 +8,44 @@
     <title>Sandbox</title>
 </head>
 <body>
+    <main>
     <div class="alt-innhold">
-       <div class="container">
-            <div class="slider-wrapper">
-                <a class="slider" href="produkt.html">
-                    <img id="slide-1" src="img/white-shoes1.jpg" alt="placeholder">
-                    <img id="slide-2" src="img/white-shoes3.jpg" alt="placeholder">
-                    <img id="slide-3" src="img/shoesole.jpg" alt="placeholder">
-                </a>
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                </div>
-            </div>
+        <div class="all-images">
+        <div class="small-images">
+            <a href="#slide-1"><img src="img/white-shoes1.jpg" alt="placeholder"></a>
+            <a href="#slide-2"><img src="img/white-shoes3.jpg" alt="placeholder"></a>
+            <a href="#slide-3"><img src="img/shoesole.jpg" alt="placeholder"></a>
         </div>
-        <div class="name-price">
+            <section class="container">
+                    <div class="slider-wrapper">
+                        <a class="slider" href="produkt.html">
+                            <img id="slide-1" src="img/white-shoes1.jpg" alt="placeholder">
+                            <img id="slide-2" src="img/white-shoes3.jpg" alt="placeholder">
+                            <img id="slide-3" src="img/shoesole.jpg" alt="placeholder">
+                        </a>
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <section class="name-price">
             <h2 class="prod-name">COURT STAR</h2>
             <h4 class="prod-price">123,00 kr</h4>
-        </div>
-        <div class="size-add-cart">       
+            <p>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Doloremque, et aspernatur tempore consectetur non eligendi 
+             alias dolor facilis ad consequatur laudantium dolores 
+             </p>
+             <p>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Doloremque, et aspernatur tempore consectetur non eligendi 
+             alias dolor facilis ad consequatur laudantium 
+             </p>
+        </section>
+        <form class="size-add-cart">       
                 <select class="select-box">
                     <option class="abc" value="">Velg en størrelse</option>
                     <option value="third">Størrelse 39</option>
@@ -50,56 +68,41 @@
                     <option value="fourth">Størrelse 47</option>
                 </select>
                 <button class="btn-leggtil">Legg til i handlekurv</button>
-        </div>
-        <div class="prod-desc">
-           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Doloremque, et aspernatur tempore consectetur non eligendi 
-            alias dolor facilis ad consequatur laudantium dolores 
-            </p>
-            <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Doloremque, et aspernatur tempore consectetur non eligendi 
-            alias dolor facilis ad consequatur laudantium dolores 
-            </p>
-        </div>
-        <div class="reviews">
+        </form>
+        <article class="reviews">
             <h2>Anmeldelser</h2>
-            <div class="review">
-                <div class="reviewer">
-                    <h3>Ola Norman</h3>
-                </div>
-                <div class="rating">
+            <section class="review">
+                    <h3 class="reviewer">Ola Norman</h3>
+                <span class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
-                </div>
-                <div class="review-text">
+                </span>
+                <blockquote class="review-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in elit vehicula. 
                     </p>
-                </div>
-            </div>
-            <div class="review">
-                <div class="reviewer">
-                    <h3>Oda Norman</h3>
-                </div>
-                <div class="rating">
+                </blockquote>
+            </section>
+            <section class="review">
+                    <h3 class="reviewer">Oda Norman</h3>
+                <span class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fa-regular fa-star-half-stroke"></i>
                     <i class="far fa-star"></i>
-                </div>
-                <div class="review-text">
+                </span>
+                <blockquote class="review-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in elit vehicula. 
                     </p>
-                </div>
-            </div>
-        </div>
-    </div>  
+                </blockquote>
+            </section>
+        </article>
+    </div>
+    </main>  
 </body>
 </html>
