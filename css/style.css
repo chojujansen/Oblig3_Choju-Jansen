@@ -598,6 +598,11 @@ footer .footer-container .sec p {
     padding: 15px;
 }
 
+.prod-price {
+    font-size: 35px;
+    margin: 0;
+}
+
 .prod-btn-leggtil{
     border: none;
     color: white;
@@ -820,7 +825,7 @@ footer .footer-container .sec p {
 @media screen and (min-width: 760px) {
     .prod-alt-innhold {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
         justify-items: left;
         align-items: center;
